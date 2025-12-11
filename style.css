@@ -599,6 +599,12 @@ body.ventures-page .section:first-of-type .section-subtitle {
   background: radial-gradient(circle at top, #0b1025 0, #020617 70%);
 }
 
+/* Add space after the ventures division band */
+.ventures-band + .section {
+  margin-top: 4rem; /* adjust to taste – 3–5rem works well */
+}
+
+
 .ventures-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.7rem;
