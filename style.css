@@ -784,6 +784,10 @@ body.automation-page .hero-automation .section-subtitle {
   max-width: 42rem;
 }
 
+body.automation-page .hero-automation {
+  padding-top: 6rem;
+}
+
 /* Two-column hero layout like the main hero, but tuned for text + card */
 .hero-automation-inner {
   display: grid;
@@ -823,6 +827,12 @@ body.automation-page .hero-automation .section-subtitle {
   border-bottom: 1px solid rgba(30, 64, 175, 0.6);
   background: radial-gradient(circle at top, #0b1025 0, #020617 70%);
 }
+
+/* Extra spacing after the automation band */
+.automation-band + .section {
+  margin-top: 4rem; /* adjust to taste */
+}
+
 
 .automation-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
