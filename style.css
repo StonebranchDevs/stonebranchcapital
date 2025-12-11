@@ -554,3 +554,13 @@ body {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+/* === About page hero tweaks === */
+body.about-page .section:first-of-type .section-title {
+  font-size: 1.9rem;
+  max-width: 38rem;
+}
+
+body.about-page .section:first-of-type .section-subtitle {
+  font-size: 1.05rem;
+  max-width: 42rem;
+}
