@@ -685,17 +685,17 @@ body {
   color: #e5e7eb;
   line-height: 1.6;
 
-  /* Dark base gradient + visible diagonal mesh */
   background:
-    radial-gradient(circle at top, #0b1025 0, #020617 55%, #000 100%),
+    radial-gradient(circle at top, #11192f 0, #0a1222 55%, #050910 100%),
     repeating-linear-gradient(
       135deg,
-      rgba(148, 163, 184, 0.18) 0px,
-      rgba(148, 163, 184, 0.18) 1px,
+      rgba(148, 163, 184, 0.25) 0px,
+      rgba(148, 163, 184, 0.25) 1px,
       transparent 1px,
       transparent 14px
     );
 }
+
 
 
 /* === Hero glow field on home page === */
