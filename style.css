@@ -771,3 +771,98 @@ body {
   transform: translateY(0);
 }
 
+/* === Automation page tweaks === */
+
+/* Slight hero adjustment just for automation page */
+body.automation-page .hero-automation .section-title {
+  font-size: 1.9rem;
+  max-width: 40rem;
+}
+
+body.automation-page .hero-automation .section-subtitle {
+  font-size: 1.05rem;
+  max-width: 42rem;
+}
+
+/* Two-column hero layout like the main hero, but tuned for text + card */
+.hero-automation-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 2.75rem;
+  align-items: flex-start;
+}
+
+.hero-automation-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin: 1.4rem 0 0.7rem;
+}
+
+.hero-automation-footnote {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  max-width: 38rem;
+}
+
+/* Right-hand card in hero */
+.hero-automation-panel {
+  max-width: 380px;
+  width: 100%;
+}
+
+.hero-automation-card {
+  height: 100%;
+}
+
+/* Band styling for the "What we automate" section */
+.automation-band {
+  padding-top: 3.3rem;
+  padding-bottom: 3.5rem;
+  border-top: 1px solid rgba(30, 64, 175, 0.6);
+  border-bottom: 1px solid rgba(30, 64, 175, 0.6);
+  background: radial-gradient(circle at top, #0b1025 0, #020617 70%);
+}
+
+.automation-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Step list styling */
+.step-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.step-list li {
+  margin-bottom: 0.7rem;
+}
+
+.automation-note {
+  margin-top: 1.1rem;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* Responsive adjustments for automation grid & hero */
+@media (max-width: 1024px) {
+  .automation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-automation-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-automation-panel {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .automation-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
