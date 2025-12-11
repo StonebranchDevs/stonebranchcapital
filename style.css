@@ -672,3 +672,13 @@ body.ventures-page .section:first-of-type .section-subtitle {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+/* Ventures hero refinements */
+.hero-ventures .section-title {
+  font-size: 2rem;
+  max-width: 40rem;
+}
+
+.hero-ventures .section-subtitle {
+  font-size: 1.05rem;
+  max-width: 44rem;
+}
