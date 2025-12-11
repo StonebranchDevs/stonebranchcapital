@@ -382,3 +382,61 @@ body {
     flex-wrap: wrap;
   }
 }
+
+/* === TYPOGRAPHY UPGRADE — overrides === */
+
+/* Nav links */
+.nav-links a {
+  font-size: 0.95rem;
+}
+
+/* Buttons */
+.btn {
+  font-size: 0.9rem;
+}
+
+/* Hero section */
+.hero-kicker {
+  font-size: 0.9rem;
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 3.6vw, 3.25rem);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+}
+
+/* Section headers */
+.section-kicker {
+  font-size: 0.9rem;
+}
+
+.section-title {
+  font-size: 1.7rem;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+}
+
+/* Cards */
+.card-title {
+  font-size: 1.1rem;
+}
+
+.card-body {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* Footer */
+.site-footer {
+  font-size: 0.9rem;
+}
+
+.footer-links a {
+  font-size: 0.92rem;
+}
+
