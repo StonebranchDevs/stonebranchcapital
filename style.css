@@ -685,45 +685,39 @@ body {
   color: #e5e7eb;
   line-height: 1.6;
 
+  /* Base dark gradient */
   background:
     radial-gradient(circle at top, #11192f 0, #0a1222 55%, #050910 100%),
-    repeating-linear-gradient(
-      135deg,
-      rgba(148, 163, 184, 0.25) 0px,
-      rgba(148, 163, 184, 0.25) 1px,
-      transparent 1px,
-      transparent 14px
-    );
+    radial-gradient(#1f2933 1px, transparent 1px);
+  background-size: auto, 26px 26px;
 }
 
 
-
-/* === Hero glow field on home page === */
-
-/* === Hero glow field on home page === */
+/* === Hero glow field on home page (cranked up) === */
 
 .home-page .hero-with-glow {
   position: relative;
   overflow: visible;
-  z-index: 0; /* create a stacking context */
+  z-index: 0;
 }
 
 .home-page .hero-inner {
   position: relative;
-  z-index: 1; /* content stays above glow */
+  z-index: 1;
 }
 
 .home-page .hero-with-glow::before {
   content: "";
   position: absolute;
-  inset: -80px -120px auto -120px;
+  inset: -120px -160px auto -160px;
   background:
-    radial-gradient(circle at 20% 0, rgba(59, 130, 246, 0.7), transparent 60%),
-    radial-gradient(circle at 80% 10%, rgba(56, 189, 248, 0.5), transparent 60%);
+    radial-gradient(circle at 20% 0, rgba(59, 130, 246, 0.95), transparent 70%),
+    radial-gradient(circle at 80% 10%, rgba(56, 189, 248, 0.85), transparent 70%);
+  filter: blur(16px);
   opacity: 1;
-  filter: blur(6px);
-  z-index: 0; /* behind content, above page background */
+  z-index: 0;
 }
+
 
 /* Slight subtle vignette under the bottom section */
 .home-page .section:last-of-type {
