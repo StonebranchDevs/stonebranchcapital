@@ -196,9 +196,34 @@
     <script>
       // keep year in footer up to date
       document.getElementById("year").textContent = new Date().getFullYear();
+    
+      // simple scroll reveal for elements with .reveal
+      const reveals = document.querySelectorAll(".reveal");
+    
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // reveal once
+              }
+            });
+          },
+          {
+            threshold: 0.15,
+          }
+        );
+    
+        reveals.forEach(el => observer.observe(el));
+      } else {
+        // Fallback: if no IntersectionObserver, just show everything
+        reveals.forEach(el => el.classList.add("visible"));
+      }
     </script>
   </body>
 </html>
+
 
 
 
