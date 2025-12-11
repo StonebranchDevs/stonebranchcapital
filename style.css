@@ -522,3 +522,35 @@ body {
 .section-title {
   font-size: 1.75rem;
 }
+
+/* === About mission/vision layout === */
+
+.section-band {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+
+.about-two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.8rem;
+}
+
+/* Make the mission/vision cards equal height & nicely padded */
+.about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Slightly smaller fine-print for the funding disclaimer but still readable */
+.about-fine-print {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* On tablets/phones, stack them instead of side-by-side */
+@media (max-width: 900px) {
+  .about-two-col {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
