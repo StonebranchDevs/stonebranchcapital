@@ -528,6 +528,9 @@ body {
 .section-band {
   padding-top: 3.2rem;
   padding-bottom: 3.2rem;
+  background: radial-gradient(circle at top, #0b1025 0, #020617 70%);
+  border-top: 1px solid rgba(30, 64, 175, 0.6);
+  border-bottom: 1px solid rgba(30, 64, 175, 0.6);
 }
 
 .about-two-col {
@@ -563,4 +566,14 @@ body.about-page .section:first-of-type .section-title {
 body.about-page .section:first-of-type .section-subtitle {
   font-size: 1.05rem;
   max-width: 42rem;
+}
+/* Operating principles emphasis */
+.section:nth-of-type(4) .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.section:nth-of-type(4) .card-body {
+  font-size: 0.98rem;
+  line-height: 1.7;
 }
