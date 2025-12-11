@@ -4,66 +4,292 @@
     <meta charset="UTF-8" />
     <title>About | Stonebranch Capital LLC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts to match the main site -->
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Manrope:wght@500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Shared styles -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="page">
-      <!-- Same header -->
+      <!-- HEADER (same as index.html) -->
       <header class="site-header">
         <div class="container">
           <div class="site-header-inner">
             <a href="index.html" class="logo">
-              <div class="logo-mark">SB</div>
+              <img src="sbc-logo.png" alt="Stonebranch Capital logo" class="logo-img" />
               <div>
                 <div class="logo-text-main">Stonebranch Capital LLC</div>
                 <div class="logo-text-sub">Parent company &amp; ventures</div>
               </div>
             </a>
+
             <nav class="nav-links">
               <a href="index.html">Home</a>
               <a href="about.html">About</a>
               <a href="ventures.html">Business Ventures</a>
               <a href="automation.html">Business Assistance</a>
+              <button
+                class="btn btn-outline"
+                onclick="window.location.href='mailto:jdoms@stonebranchcapital.com?subject=Stonebranch%20Inquiry'"
+              >
+                Contact
+              </button>
             </nav>
           </div>
         </div>
       </header>
 
       <main>
+        <!-- HERO / INTRO -->
+        <section class="section" style="padding-top: 3.2rem;">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-kicker">About Stonebranch</div>
+              <h1 class="section-title">Built to create, support, and scale ventures the right way.</h1>
+              <p class="section-subtitle">
+                Stonebranch Capital LLC is a small, intentional parent company based in South Carolina.
+                We exist to give our own brands—and select partner businesses—a stable operational
+                foundation, modern customer experience, and the systems they need to grow.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- MISSION & VISION -->
+        <section class="section">
+          <div class="container">
+            <div class="card-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem;">
+              <!-- Mission -->
+              <article class="card">
+                <div class="card-tag">Our mission</div>
+                <h2 class="card-title">Build reliable, modern business systems.</h2>
+                <p class="card-body">
+                  Our mission is to build reliable, efficient, modern operating systems for small
+                  businesses—whether they’re ventures we own or companies we support. We focus on
+                  clean operations, clear communication, and customer experiences that feel
+                  professional, respectful, and easy.
+                </p>
+                <p class="card-body">
+                  Every venture under Stonebranch should feel organized, predictable, and
+                  trustworthy—from the first inquiry to the final invoice.
+                </p>
+              </article>
+
+              <!-- Vision -->
+              <article class="card">
+                <div class="card-tag">Our vision</div>
+                <h2 class="card-title">A portfolio that grows together, not apart.</h2>
+                <p class="card-body">
+                  Our vision is to create a portfolio of service businesses and digital tools that
+                  share processes, systems, and standards. New projects shouldn’t have to start from
+                  zero; they should inherit what works and improve on it.
+                </p>
+                <p class="card-body">
+                  Stonebranch is especially committed to supporting veteran-owned and
+                  early-stage businesses where access to capital, time, and operational support is
+                  limited. For select partnerships, we use flexible models—including
+                  revenue-share or phased support—so we can align with long-term success instead of
+                  loading founders with up-front cost.
+                </p>
+                <p class="card-body" style="font-size: 0.9rem; opacity: 0.85;">
+                  <strong>Important:</strong> Stonebranch Capital LLC is <em>not</em> a lender or
+                  funding company. We do not offer loans, lines of credit, or financial products.
+                  Our role is to help businesses gain and retain customers, improve operations,
+                  and build stable revenue—not to sell financing.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- WHAT WE DO -->
         <section class="section">
           <div class="container">
             <div class="section-header">
-              <div class="section-kicker">About</div>
-              <h1 class="section-title">The idea behind Stonebranch.</h1>
+              <div class="section-kicker">What we do</div>
+              <h2 class="section-title">A focused parent company, not a collection of random ideas.</h2>
               <p class="section-subtitle">
-                You can drop in your real story here: why you created Stonebranch, your
-                background (military, firefighting, entrepreneurship), and what you want
-                this company to become.
+                Stonebranch is designed to hold a small number of ventures that share a common
+                thread: practical services, strong systems, and a modern, respectful experience
+                for customers and teams.
               </p>
             </div>
 
-            <p>
-              <!-- Fill this out with your real copy later -->
-              Stonebranch Capital LLC is your holding company / parent company. This is
-              where we can talk about stability, long-term focus, and why you build
-              systems instead of random one-off hustles.
-            </p>
+            <div class="card-grid">
+              <article class="card">
+                <div class="card-tag">01</div>
+                <h3 class="card-title">Service-based ventures</h3>
+                <p class="card-body">
+                  We build and operate service businesses like Southern Elite Bin Cleaning with
+                  an emphasis on recurring revenue, route efficiency, and a clean brand presence.
+                </p>
+                <ul class="card-list">
+                  <li>Residential &amp; local services</li>
+                  <li>Route-based operations and scheduling</li>
+                  <li>Customer portals, reminders, and follow-up</li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <div class="card-tag">02</div>
+                <h3 class="card-title">Automation &amp; business systems</h3>
+                <p class="card-body">
+                  We help local businesses modernize how they capture leads, book work, and
+                  communicate. That includes AI-powered intake, follow-up, and internal workflows.
+                </p>
+                <ul class="card-list">
+                  <li>Lead capture &amp; response automation</li>
+                  <li>Scheduling &amp; reminder flows</li>
+                  <li>Review, reputation, and retention systems</li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <div class="card-tag">03</div>
+                <h3 class="card-title">Tools, software &amp; future ventures</h3>
+                <p class="card-body">
+                  Some of the systems we build for ourselves become templates, internal tools,
+                  or candidates for stand-alone software products in the future.
+                </p>
+                <ul class="card-list">
+                  <li>Internal tools that may evolve into products</li>
+                  <li>Shared processes across multiple ventures</li>
+                  <li>Room to launch new ideas under one umbrella</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- OPERATING PRINCIPLES -->
+        <section class="section">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-kicker">How we operate</div>
+              <h2 class="section-title">Principles that guide every venture.</h2>
+              <p class="section-subtitle">
+                Whether we’re working on our own brands or supporting someone else’s, we try
+                to operate the same way: clear, disciplined, and focused on the long term.
+              </p>
+            </div>
+
+            <div class="card-grid" style="grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem;">
+              <article class="card">
+                <h3 class="card-title">Clarity over complexity</h3>
+                <p class="card-body">
+                  Systems, offers, and communication should be easy to understand. Complexity
+                  might look impressive, but clarity is what actually scales.
+                </p>
+              </article>
+
+              <article class="card">
+                <h3 class="card-title">Systems first</h3>
+                <p class="card-body">
+                  We fix the process before we try to grow it. Good systems protect time,
+                  reduce stress, and make it easier to bring new people into the work.
+                </p>
+              </article>
+
+              <article class="card">
+                <h3 class="card-title">Long-term thinking</h3>
+                <p class="card-body">
+                  We would rather build something stable and boring than something flashy
+                  and fragile. Stability beats hype over the long run.
+                </p>
+              </article>
+
+              <article class="card">
+                <h3 class="card-title">Customer experience first</h3>
+                <p class="card-body">
+                  Clean branding and responsive communication aren’t optional. They’re part of
+                  how we show respect to the people who trust us with their time and money.
+                </p>
+              </article>
+
+              <article class="card">
+                <h3 class="card-title">Aligned incentives</h3>
+                <p class="card-body">
+                  We look for arrangements where everyone wins together. If a partnership
+                  doesn’t support the founder, the customers, and Stonebranch, it’s not a fit.
+                </p>
+              </article>
+
+              <article class="card">
+                <h3 class="card-title">Continuous improvement</h3>
+                <p class="card-body">
+                  Launch is not the finish line. We track what’s working, listen to feedback,
+                  and iterate over time instead of chasing quick, one-time wins.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- LEADERSHIP / ROOTS (kept light & professional) -->
+        <section class="section">
+          <div class="container">
+            <div class="card" style="max-width: 780px; margin: 0 auto;">
+              <div class="card-tag">Roots &amp; leadership</div>
+              <h2 class="card-title">Grounded in real-world service and discipline.</h2>
+              <p class="card-body">
+                Stonebranch Capital is led by a U.S. military veteran with experience in
+                emergency services, operations, and service-based business development.
+                That background shows up in how we think: clear chains of responsibility,
+                checklists, training, and systems that still work on hard days—not just
+                on paper.
+              </p>
+              <p class="card-body">
+                The goal is simple: build and support businesses that feel solid, honest,
+                and dependable—for owners, teams, and the people they serve.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT / CTA -->
+        <section class="section">
+          <div class="container">
+            <div class="card" style="max-width: 780px; margin: 0 auto; text-align: left;">
+              <div class="section-kicker">Next step</div>
+              <h2 class="section-title">Want to connect or explore a potential fit?</h2>
+              <p class="section-subtitle">
+                If you’re curious about how Stonebranch thinks, want to discuss a
+                collaboration, or just want to see if our approach fits your business,
+                you’re welcome to reach out.
+              </p>
+              <p class="card-body">
+                Email <a href="mailto:jdoms@stonebranchcapital.com">jdoms@stonebranchcapital.com</a>
+                with a short note about who you are, what you’re working on, and what
+                you’re looking for. We’ll respond with honest thoughts and, if it makes
+                sense, a simple path forward.
+              </p>
+            </div>
           </div>
         </section>
       </main>
 
+      <!-- FOOTER -->
       <footer class="site-footer">
         <div class="container">
           <div class="footer-inner">
-            <div>© <span id="year"></span> Stonebranch Capital LLC.</div>
+            <div>© <span id="year"></span> Stonebranch Capital LLC. All rights reserved.</div>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="ventures.html">Ventures</a>
+              <a href="automation.html">Business Assistance</a>
+              <a href="mailto:jdoms@stonebranchcapital.com">Contact</a>
+            </div>
           </div>
         </div>
       </footer>
     </div>
+
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
