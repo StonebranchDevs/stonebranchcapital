@@ -584,3 +584,91 @@ body.about-page .section:first-of-type .section-subtitle {
   font-size: 0.98rem;
   line-height: 1.7;
 }
+
+/* === Ventures page tweaks === */
+
+/* Slight hero adjustment just for Ventures */
+body.ventures-page .section:first-of-type .section-title {
+  font-size: 1.9rem;
+  max-width: 38rem;
+}
+
+body.ventures-page .section:first-of-type .section-subtitle {
+  font-size: 1.05rem;
+  max-width: 42rem;
+}
+
+/* Division grid & cards */
+.ventures-band {
+  padding-top: 3.2rem;
+  padding-bottom: 3.4rem;
+  border-top: 1px solid rgba(30, 64, 175, 0.6);
+  border-bottom: 1px solid rgba(30, 64, 175, 0.5);
+  background: radial-gradient(circle at top, #0b1025 0, #020617 70%);
+}
+
+.ventures-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.7rem;
+}
+
+.division-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Status pill on each division */
+.division-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(129, 140, 248, 0.7);
+  margin-bottom: 0.65rem;
+}
+
+.division-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 0, #bbf7d0, #22c55e);
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.9);
+}
+
+.division-status-active .division-status-dot {
+  background: radial-gradient(circle at 30% 0, #bfdbfe, #3b82f6);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.9);
+}
+
+.division-status-explore .division-status-dot {
+  background: radial-gradient(circle at 30% 0, #fef9c3, #facc15);
+  box-shadow: 0 0 10px rgba(234, 179, 8, 0.9);
+}
+
+/* Slightly larger division titles */
+.division-card .card-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Card list inside divisions a bit larger */
+.division-card .card-list li {
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+  .ventures-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .ventures-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
