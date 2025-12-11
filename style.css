@@ -509,3 +509,16 @@ body {
   box-shadow: 0 26px 60px rgba(15, 23, 42, 0.95);
   border-color: rgba(129, 140, 248, 0.9);
 }
+
+/* === About page emphasis tweaks === */
+
+/* Bigger, clearer card titles on About & ventures */
+.card-title {
+  font-size: 1.25rem;
+  letter-spacing: 0.01em;
+}
+
+/* Slightly stronger section titles */
+.section-title {
+  font-size: 1.75rem;
+}
